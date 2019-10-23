@@ -22,4 +22,14 @@
 		<phone type="work">6660611</phone>
 		<notes>my best friend</notes>
 	</contact>
+	<contact>
+		<name>Mariusz</name>
+		<name>Cyprian</name>
+		<surname>Malinowski</surname>
+		<email type="personal">mmalinowski@gmail.com</email>
+		<email type="business">mariusz.malinowski@CompLand.pl</email>
+		<phone type="home">5523307</phone>
+		<phone type="work">3257341</phone>
+		<notes>me</notes>
+	</contact>
 </contacts>

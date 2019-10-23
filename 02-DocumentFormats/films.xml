@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<films>
+	<film>
+		<title>
+			Gi-saeng-chung
+		</title>
+		<genre>
+			Thriller
+		</genre>
+		<year>
+			2019
+		</year>
+		<personalrating>
+			10
+		</personalrating>
+		<director>
+			Joon-ho Bong
+		</director>
+		<actors>
+			Kang-ho Song
+			Seon-gyun Lee
+			Woo-sik Choi
+			So-dam Park
+		</actors>
+	</film>
+	<film>
+		<title>
+			Don't Breathe
+		</title>
+		<genre>
+			Thriller
+		</genre>
+		<year>
+			2016
+		</year>
+		<personalrating>
+			10
+		</personalrating>
+		<director>
+			Fede Alvarez
+		</director>
+		<actors>
+			Stephen Lang
+			Jane Levy
+			Dylan Minnette
+			Daniel Zovatto
+		</actors>
+	</film>
+	<film>
+		<title>
+			Annabelle Comes Home
+		</title>
+		<genre>
+			Horror
+		</genre>
+		<year>
+			2019
+		</year>
+		<personalrating>
+			9
+		</personalrating>
+		<director>
+			Gary Dauberman
+		</director>
+		<actors>
+			Madison Iseman
+			Vera Farmiga
+			Patrick Wilson
+			Mckenna Grace
+		</actors>
+	</film>
+	<film>
+		<title>
+			The Shawshank Redemption
+		</title>
+		<genre>
+			Dramat
+		</genre>
+		<year>
+			1994
+		</year>
+		<personalrating>
+			10
+		</personalrating>
+		<director>
+			Frank Darabont
+		</director>
+		<actors>
+			Tim Robbins
+			Morgan Freeman
+			Bob Gunton
+			William Sadler
+		</actors>
+	</film>
+	<film>
+		<title>
+			Se7en
+		</title>
+		<genre>
+			Thriller
+		</genre>
+		<year>
+			1995
+		</year>
+		<personalrating>
+			10
+		</personalrating>
+		<director>
+			David Fincher
+		</director>
+		<actors>
+			Morgan Freeman
+			Brad Pitt
+			Gwyneth Paltrow
+			Kevin Spacey
+		</actors>
+	</film>
+</films>
