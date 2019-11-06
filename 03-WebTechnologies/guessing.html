@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Try to guess</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Try to guess</h1>
+
+		<script>
+			// read user's number (popup window)
+			var y = prompt('Wpisz liczbę')
+			// create a random number
+			var x=Math.floor((Math.random()*5)+1)
+			// compare the numbers
+			if (x==y){
+				var z='Zgadłeś!'
+			}
+			if (x!=y){
+				var z = 'Nie zgadłeś!' + ' ' + 'Prawidłowa liczba to: ' + x
+			}
+			// show results (popup window)
+			alert(z)
+		</script>
+	</body>
+</html>
