@@ -10,6 +10,23 @@
 			after clicking the button, display the current date in the popup window;
 			use an external script with a function
 		-->
-		<button type="button">Display the current date</button>
+		<button onclick="pokazdate();" type="button">Display the current date</button>
+		<script>
+			function pokazdate() {
+				var today = new Date();
+				var dd = String(today.getDate());
+				var mm = String(today.getMonth()+1); 
+				var yyyy = today.getFullYear();
 
+				today = dd + '/' + mm + '/' + yyyy;
+				console.log(today)
+			}
+
+
+
+
+
+
+
+		</script>
 </html>

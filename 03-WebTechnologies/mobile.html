@@ -6,7 +6,22 @@
 	</head>
 	<body>
 		<h1>Create mobile phone</h1>
+		<button onclick="phonecreate();" id="button" type="button">Do it</button>
 		<script>
+			var phone = {
+					name: 	"Xiaomi Redmi 5",
+					year: 	2018,
+					cool: 	true,
+					appsinstalled: 	["Facebook", "Messenger","YouTube"],
+					specs:	 {type:"Touchscreen", value:600, bluecolor: true}
+			};
+			function phonecreate(){
+				console.log("Phone: ", phone.name);
+				console.log("Year:", phone.year,);
+				console.log("Is it cool?", phone.cool);
+				console.log("Apps installed:",phone.appsinstalled);
+				console.log("Specs:",phone.specs);
+			};
 		</script>
 	</body>
 </html>

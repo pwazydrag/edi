@@ -11,14 +11,65 @@
 					arr: [3,4,76,1,5,787,33,76,1,99,45,235,53,23],
 					min: function(){
 						// maximum value (sort the arr and take the last value, use a built-in function)
+						this.arr.sort(function(a, b){return a-b});
+						return this.arr[0]
 					},		
-					max: function(){},		// look at the min method comment
-					avg: function(){},		// avarage value
-					lth: function(val){}	// the number of arr values less than 'val'
+					max: function(){
+						this.arr.sort(function(a, b){return a-b});
+						return this.arr[this.arr.length-1]
+					},		// look at the min method comment
+					avg: function(){
+						f=0
+						sum=0
+						while (f!=this.arr.length){
+							sum = sum + this.arr[f]
+							f++
+						}
+						return sum/this.arr.length
+					},		// avarage value
+					lth: function(val){
+						il=0
+						o=0
+						while(o!=this.arr.length-1){
+							if (this.arr[o]<val){
+								il = il + 1
+							}
+							o++
+						}
+						return il
+					}	// the number of arr values less than 'val'
 			};
-			
+			console.log(myArray.min())
+			console.log(myArray.max())
+			console.log(myArray.avg())
+			console.log(myArray.lth(99))
 			// display results (min,max,avg,lth) in the console
 			// ...
+			var array = [];
+			for (i=1; i<6;i++) {
+			var x=Math.floor((Math.random()*5)+1);
+			array.push(x);
+			};
+			console.log(array)
+			m = true
+			f=0
+			while(f<5){
+				if (array[f+1]<array[f]){
+					m = true
+				}
+				else {
+					m = false
+					break
+				}
+				f++;
+			}
+			if (m==true){
+				console.log("Tablica jest posortowana.")
+			}
+			else {
+				console.log("Tablica nie jest posortowana.")
+			}
+
 		</script>
 	</body>
 </html>

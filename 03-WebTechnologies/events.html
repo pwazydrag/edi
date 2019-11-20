@@ -7,6 +7,15 @@
 	<body>
 		<h1>Reacting to events</h1>
 		<p id="message">waiting for your action ...</p>
-		<button id="button" type="button">Click</button>
+		<button onclick="clicked();" id="button" type="button">Click</button>
+		<script>
+			x=0
+			function clicked(){
+				x++
+				console.log( "You clicked the button " + x + " times.")
+			}
+		
+		
+		</script>
 	<body>
 </html>
