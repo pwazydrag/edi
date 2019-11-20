@@ -5,13 +5,19 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<h3>Sticks and stones may break my bones, but words will never harm me.</h3>
+		<h3 id="Headline">Sticks and stones may break my bones, but words will never harm me.</h3>
 		<script>
 			// a JavaScript code here ...
-			
+			document.getElementById("Headline").onmouseover = function(){mouseOver()};
+			document.getElementById("Headline").onmouseout=function(){mouseOut()};
 			// Translation:
 			// Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią
-			
+			function mouseOver() {
+				document.getElementById("Headline").innerHTML='Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią'
+			} 
+			function mouseOut(){
+				document.getElementById("Headline").innerHTML='Sticks and stones may break my bones, but words will never harm me'
+			}
 		</script>
 	</body>
 </html>
