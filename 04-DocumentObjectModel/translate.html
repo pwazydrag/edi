@@ -5,10 +5,25 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
+<<<<<<< HEAD
 		<h3 onmouseover="textPL(this)">Sticks and stones may break my bones, but words will never harm me.</h3>
 		<script>
 			function textPL(element){
 				element.innerHTML = "Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią"
+=======
+		<h3 id="Headline">Sticks and stones may break my bones, but words will never harm me.</h3>
+		<script>
+			// a JavaScript code here ...
+			document.getElementById("Headline").onmouseover = function(){mouseOver()};
+			document.getElementById("Headline").onmouseout=function(){mouseOut()};
+			// Translation:
+			// Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią
+			function mouseOver() {
+				document.getElementById("Headline").innerHTML='Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią'
+			} 
+			function mouseOut(){
+				document.getElementById("Headline").innerHTML='Sticks and stones may break my bones, but words will never harm me'
+>>>>>>> b44a4d9c220b3324cd2dd9a8ff4ad2f1cc848c11
 			}
 		</script>
 	</body>

@@ -12,7 +12,13 @@
 
     <script>
         // a JavaScript code here ...
-
+        console.log(document.getElementsByTagName('h1')[0].innerHTML);
+        console.log(document.getElementById('someTest').innerHTML);
+        console.log(document.getElementsByClassName('important')[0].innerHTML);
+        let p = document.getElementsByTagName('p');
+        for (a=0;a<p.length;a++){
+            console.log(p[a])
+        }
     </script>
 </body>
 
