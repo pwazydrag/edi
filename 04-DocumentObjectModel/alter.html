@@ -4,10 +4,10 @@
 		<title>Pink Floyd</title>
 		<meta charset="UTF-8">
 	</head>
-	<body>
-		<h1>Another Brick in the Wall</h1>
-		<h3>Pink Floyd</h3>
-		<p>We don't need no education<br>
+	<body onclick="Background();">
+		<h1 onclick="addText();">Another Brick in the Wall</h1>
+		<h3 onclick ="addDescription()">Pink Floyd</h3>
+		<p oncopy ="Warning();" oncut="Warning();" onclick="pItalics(this);">We don't need no education<br>
 		We don't need no thought control<br>
 		No dark sarcasm in the classroom<br>
 		Teachers leave them kids alone<br>
@@ -15,14 +15,54 @@
 		All in all it's just another brick in the wall<br>
 		All in all you're just another brick in the wall</p>
 		
-		<p style="visibility: hidden;">Pink Floyd were an English rock band formed in London.<br>
+		<p onclick="showPicture();" id="opis" style="visibility: hidden;">Pink Floyd were an English rock band formed in London.<br>
 		They achieved international acclaim with their progressive<br>
 		and psychedelic music.</p>
 		
 		<script>
+			var textAdded=false
+			var italBool=false
+			var imageExists=false
 			// a JavaScript code here ...
 			function addText(){
-				
+				if (textAdded==false){
+					headline=document.getElementsByTagName("h1")[0]
+					headline.textContent+= " (Part 2)"
+					textAdded=true
+				}
+
+
+			}
+			function addDescription(){
+				description=document.getElementById("opis")
+				if (description.style.visibility=="hidden"){
+					description.style.visibility='visible'
+				}
+				else{
+					description.style.visibility="hidden"
+				}
+			}
+			function pItalics(what){
+				if (italBool==false){
+					what.style.fontStyle='italic'
+					italBool=true
+				}
+
+			}
+			function Background(){
+				document.body.style.backgroundColor="yellow"
+			}
+			function Warning(){
+				alert("Copyright!")
+			}
+			function showPicture(){
+				if (imageExists==false && document.getElementById("opis").style.visibility=="visible"){
+					createImage=document.createElement("img")
+					createImage.setAttribute('src', "https://upload.wikimedia.org/wikipedia/en/d/d6/Pink_Floyd_-_all_members.jpg")
+					document.body.appendChild(createImage)
+					imageExists=true
+				}
+
 			}
 		</script>
 	</body>
