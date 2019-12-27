@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mmmmmmmmmmmm</title>
+</head>
+<body>
+    <h1>Waluty</h1>
+    <p id="dane"></p>
+
+    <script>
+        
+        var dane = document.getElementById('dane');
+        var euro = new XMLHttpRequest();
+        euro.onreadystatechange() = function(){
+            if (euro.readyState == 4 && euro.status==200){
+                var p1 =JSON.parse(r.responseText);
+            document.createElement('p');
+            for (i=0; i<10; i++){   
+                p.innerText = p1
+            }
+            dane.appendChild(p)
+            };
+        };
+        euro.open('GET','http://api.nbp.pl/api/exchangerates/rates/a/eur/last/10/?format=json');
+        euro.send()
+    </script>
+</body>
+</html>

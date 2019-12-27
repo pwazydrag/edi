@@ -1,0 +1,3 @@
+var gold=new XMLHttpRequest();
+gold.open('GET', 'http://api.nbp.pl/api/cenyzlota');
+gold.send()
